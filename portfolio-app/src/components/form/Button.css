@@ -1,0 +1,19 @@
+.btn-link {
+    color: #64FFDA;
+    font-size: 15px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+
+    padding: 20px 25px;
+
+    border: 1px solid #64FFDA;
+    border-radius: 5px;
+
+    transition: 1s all;
+}
+
+.btn-link:hover {
+    background-color: #64ffdb14;
+   
+}

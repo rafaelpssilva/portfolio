@@ -66,18 +66,34 @@
 
 @media (max-width: 600px) {
     .sidenav-list {
+        display: none;
+    }
+
+    .sidenav-list-mobile {
         flex-direction: column;
         line-height: 50px;
         position: absolute;
         top: 56px;
         right: 30px;
         display: block;
-        padding: 0px 50px;
-        border: 1px solid black;
+        padding: 0px 50px 20px 50px;
+        list-style: none;
+        background-color: #0a192f;
+        width: 85vw;
+        z-index: 2;
     }
 
-    .sidenav-list li + li {
-        margin-left: 00px;
+    .sidenav-list-mobile li {
+        text-align: center;
+    }
+
+    .sidenav-list-mobile li + li {
+        margin-left: 0px;
+    }
+
+    .sidenav-list-mobile a {
+        color: white;
+        text-decoration: none;
     }
 
     .menu-mobile {
@@ -88,5 +104,9 @@
         border: 1px solid #64ffda;
         font-size: 18px;
         background-color: #0a192f;
+    }
+
+    .menu-mobile:focus {
+        background-color: #283c58;
     }
 }

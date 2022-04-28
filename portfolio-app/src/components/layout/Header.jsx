@@ -5,6 +5,10 @@ import "./Header.css";
 function Header() {
     const [menuVisible, setMenuVisible] = React.useState(false);
 
+    function setDisplayMenu() {
+        setMenuVisible(false);
+    }
+
     return (
         <header className="header">
             <nav>
@@ -14,7 +18,7 @@ function Header() {
 
                 <ul className="sidenav-list">
                     <li>
-                        <a href="/">Home</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li>
                         <a href="#sobre">Sobre</a>
@@ -27,7 +31,36 @@ function Header() {
                     </li>
                 </ul>
 
-                <button href="/" className="menu-mobile">
+                {menuVisible && (
+                    <ul className="sidenav-list-mobile">
+                        <li>
+                            <a href="#home" onClick={setDisplayMenu}>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#sobre" onClick={setDisplayMenu}>
+                                Sobre
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#projetos" onClick={setDisplayMenu}>
+                                Projetos
+                            </a>
+                        </li>
+                        <li className="cv">
+                            <a href="/" onClick={setDisplayMenu}>
+                                Resumo
+                            </a>
+                        </li>
+                    </ul>
+                )}
+
+                <button
+                    href="/"
+                    className="menu-mobile"
+                    onClick={() => setMenuVisible(!menuVisible)}
+                >
                     Menu
                 </button>
             </nav>

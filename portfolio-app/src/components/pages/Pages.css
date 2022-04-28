@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,900&display=swap");
 
 * {
-    font-family: 'Roboto';
+    font-family: "Roboto";
 }
 
 section {
@@ -9,7 +9,7 @@ section {
 }
 
 strong {
-    color: #64FFDA;
+    color: #64ffda;
     font-weight: 400;
 }
 
@@ -17,19 +17,19 @@ strong {
 
 .home {
     height: 90vh;
-    position: relative; 
+    position: relative;
 }
 
 .conteudo-home {
-    position: absolute; 
+    position: absolute;
     top: 30%;
     transform: translateY(-30%);
 }
 
 .home .apresentacao {
-    color: #64FFDA;
+    color: #64ffda;
 
-    font-size: min(1.1em, 5vw);
+    font-size: min(1.1em, 6.5vw);
     word-spacing: 4px;
 
     margin-bottom: 20px;
@@ -38,15 +38,15 @@ strong {
 }
 
 .home h1 {
-    color: #CCD6F6;
-    font-size: min(150px, 5.5vw);
+    color: #ccd6f6;
+    font-size: min(150px, 8vw);
     margin-bottom: 5px;
 }
 
 .home .subtitulo {
-    color: #8892B0;
+    color: #8892b0;
 
-    font-size: min(120px, 4.4vw);
+    font-size: min(120px, 6vw);
     font-weight: 600;
 
     margin-bottom: 25px;
@@ -56,19 +56,17 @@ strong {
 }
 
 .resumo {
-    color: #7D87A4;
+    color: #7d87a4;
 
-    font-size: 17px;
+    font-size: 16.3px;
     text-align: justify;
     line-height: 1.5;
 
     padding: 0px 50px 0px 0px;
     margin-bottom: 65px;
 
-
-
+    word-spacing: 0.6px;
 }
-
 
 /* SOBRE */
 
@@ -79,19 +77,18 @@ strong {
 }
 
 .sobre h2 {
-    color: #CCD6F6;
+    color: #ccd6f6;
     font-size: min(30px, 4.7vw);
     margin-bottom: 30px;
 }
 
 .sobre .descricao {
-    color: #7D87A4;
+    color: #7d87a4;
 
     font-size: 17px;
     text-align: justify;
     line-height: 1.5;
 }
-
 
 .sobre p + p {
     margin-top: 10px;
@@ -104,15 +101,16 @@ strong {
     margin-bottom: 10px;
 }
 
-
-.tecnologias-list, .cursos-list {
+.tecnologias-list,
+.cursos-list {
     columns: 2;
     list-style: none;
     margin-bottom: 20px;
 }
 
-.tecnologias-list li, .cursos-list li {
-    color: #7D87A4;
+.tecnologias-list li,
+.cursos-list li {
+    color: #7d87a4;
     text-indent: 30px;
     margin-bottom: 3px;
     font-size: 14px;
@@ -121,18 +119,17 @@ strong {
     cursor: pointer;
 }
 
-
-.tecnologias-list li:hover, .cursos-list li:hover {
+.tecnologias-list li:hover,
+.cursos-list li:hover {
     opacity: 1;
     font-weight: 600;
 }
 
 .seta {
     margin-right: 5px;
-    color: #64FFDA;
+    color: #64ffda;
     font-size: 14px;
 }
-
 
 /* Projetos */
 
@@ -142,9 +139,8 @@ strong {
     padding-top: 30px;
 }
 
-
 .projetos h2 {
-    color: #CCD6F6;
+    color: #ccd6f6;
     font-size: 28px;
     margin-bottom: 30px;
 }
@@ -161,7 +157,7 @@ strong {
 }
 
 .projetos ul li {
-    color: #8892B0;
+    color: #8892b0;
     cursor: pointer;
 }
 
@@ -203,10 +199,7 @@ strong {
     opacity: 1;
 }
 
- 
-
 @media (min-width: 759px) {
-    
     section {
         padding: 0px 180px;
     }

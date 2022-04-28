@@ -1,12 +1,9 @@
-import React from 'react'
-import displayMenu from './menu'
+import React from "react";
 
-// import { FiMenu } from "react-icons/fi";
-
-
-import './Header.css'
+import "./Header.css";
 
 function Header() {
+    const [menuVisible, setMenuVisible] = React.useState(false);
 
     return (
         <header className="header">
@@ -16,18 +13,26 @@ function Header() {
                 </a>
 
                 <ul className="sidenav-list">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li className='cv'><a href="/">Resumo</a></li>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="#sobre">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#projetos">Projetos</a>
+                    </li>
+                    <li className="cv">
+                        <a href="/">Resumo</a>
+                    </li>
                 </ul>
 
-                <a href="/" className='menu-mobile'>
-                    {/* <FiMenu /> */}
-                </a>
+                <button href="/" className="menu-mobile">
+                    Menu
+                </button>
             </nav>
         </header>
-    )
+    );
 }
 
-export default Header 
+export default Header;

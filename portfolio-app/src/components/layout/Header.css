@@ -106,7 +106,7 @@
         background-color: #0a192f;
     }
 
-    .menu-mobile:focus {
-        background-color: #283c58;
+    .menu-mobile:active {
+        background-color: #64ffdb33;
     }
 }

@@ -72,32 +72,32 @@ strong {
 
 .sobre {
     position: relative;
-    margin-top: 80px;
+    margin-top: 60px;
     padding-top: 30px;
 }
 
 .sobre h2 {
     color: #ccd6f6;
-    font-size: min(30px, 4.7vw);
+    font-size: min(120px, 6vw);
     margin-bottom: 30px;
 }
 
 .sobre .descricao {
     color: #7d87a4;
-
     font-size: 17px;
     text-align: justify;
     line-height: 1.5;
+    word-spacing: 0.8px;
 }
 
 .sobre p + p {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .sobre h3 {
     color: #ccd6f6e4;
-    font-size: 1.3em;
-    margin-top: 20px;
+    font-size: min(120px, 5.8vw);
+    margin-top: 40px;
     margin-bottom: 10px;
 }
 
@@ -111,8 +111,8 @@ strong {
 .tecnologias-list li,
 .cursos-list li {
     color: #7d87a4;
-    text-indent: 30px;
-    margin-bottom: 3px;
+    text-indent: 10px;
+    margin-bottom: 5px;
     font-size: 14px;
     opacity: 0.7;
     transition: 0.4s;
@@ -134,30 +134,31 @@ strong {
 /* Projetos */
 
 .projetos {
-    margin-top: 160px;
+    margin-top: 120px;
     margin-bottom: 80px;
     padding-top: 30px;
 }
 
 .projetos h2 {
     color: #ccd6f6;
-    font-size: 28px;
+    font-size: min(120px, 6vw);
     margin-bottom: 30px;
 }
 
 .projetos ul {
-    width: 90%;
-    max-width: 500px;
-    margin: auto;
-
+    columns: 2;
     list-style: none;
-
-    display: flex;
-    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .projetos ul li {
-    color: #8892b0;
+    color: #64ffda;
+    text-indent: 10px;
+    text-decoration: underline;
+    margin-bottom: 9px;
+    font-size: 15px;
+    opacity: 0.7;
+    transition: 0.4s;
     cursor: pointer;
 }
 
@@ -240,6 +241,47 @@ strong {
     .home {
         margin-top: 0px;
         margin-bottom: 160px;
+    }
+
+    #box-projeto {
+        width: 0%;
+        max-width: 80px;
+        height: 50px;
+        margin: 20px auto;
+        position: relative;
+        color: white;
+        display: none;
+    }
+
+    #slider {
+        width: 92%;
+        max-width: 92%;
+        height: 50vh;
+        min-height: 250px;
+
+        margin: 20px auto;
+
+        position: relative;
+    }
+
+    #slider img {
+        width: 100%;
+        height: 100%;
+
+        opacity: 0;
+        transition: opacity 800ms;
+
+        position: absolute;
+
+        background-size: cover;
+    }
+
+    #slider img.selected {
+        opacity: 1;
+    }
+
+    .selected {
+        opacity: 1;
     }
 }
 

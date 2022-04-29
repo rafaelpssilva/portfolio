@@ -14,8 +14,8 @@ function Home() {
                 <p className="resumo">
                     Sou um <strong>Programador Web</strong>. Se especializando
                     em front-end, tenho experiências com projetos realizados em
-                    cursos, e autorias, gosto muito também de trabalhar com
-                    dados e vendas.
+                    cursos, e projetos pessoais, gosto muito também de trabalhar
+                    com manipulação de dados e vendas.
                 </p>
                 <Button text="Venha me conhecer mais!" to="#sobre" />
             </div>

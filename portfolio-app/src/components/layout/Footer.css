@@ -1,7 +1,6 @@
 footer {
     background-color: #0a192f;
-    height: 10vh;
-    display: flex;
+    height: 15vh;
     align-items: center;
     grid-area: footer;
 }
@@ -10,25 +9,36 @@ footer ul {
     margin: auto;
     list-style: none;
     display: flex;
+    margin-left: 130px;
 }
 
+footer ul li {
+    font-size: min(13px, 2.4vw);
+    margin: 0px 0px 0px 0px;
+}
 
 footer ul li a {
-    color: white;
+    color: #64ffda;
     font-size: 1.5em;
     margin-left: 10px;
     margin-right: 10px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid #64ffda;
+    border-radius: 3px;
 }
 
 .footer-cv {
-    display: none;
     margin: auto;
+    display: block;
+    margin-top: 40px;
+    text-align: center;
 }
 
 .footer-cv a {
-    color: #64FFDA;
+    color: #64ffda;
     text-decoration: none;
     padding: 10px 15px;
-    border: 1px solid #64FFDA;
+    border: 1px solid #64ffda;
     border-radius: 3px;
 }

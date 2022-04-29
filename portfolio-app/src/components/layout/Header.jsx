@@ -12,7 +12,7 @@ function Header() {
     return (
         <header className="header">
             <nav>
-                <a href="/" className="logo">
+                <a href="#home" className="logo">
                     R
                 </a>
 
@@ -27,7 +27,9 @@ function Header() {
                         <a href="#projetos">Projetos</a>
                     </li>
                     <li className="cv">
-                        <a href="/">Resumo</a>
+                        <a href="https://drive.google.com/file/d/1QuxWqArOoCz9WXMADwUQyj4p0r10bb_v/view">
+                            Resumo
+                        </a>
                     </li>
                 </ul>
 
@@ -49,7 +51,10 @@ function Header() {
                             </a>
                         </li>
                         <li className="cv">
-                            <a href="/" onClick={setDisplayMenu}>
+                            <a
+                                href="https://drive.google.com/file/d/1QuxWqArOoCz9WXMADwUQyj4p0r10bb_v/view"
+                                onClick={setDisplayMenu}
+                            >
                                 Resumo
                             </a>
                         </li>
